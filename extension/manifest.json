@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Aurora",
+  "version": "1.0",
+  "description": "Aurora Identity Browser Extension.",
+  "permissions": [
+    "identity",
+    "identity.email",
+    "webRequest",
+    "activeTab",
+    "storage",
+    "scripting",
+    "tabs",
+    "alarms"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "storage": {
+    "managed_schema": "managed_schema.json"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
+  },
+  "key": "REPLACE_WITH_YOUR_BASE64_PUBLIC_KEY_OR_DELETE_THIS_LINE"
+}

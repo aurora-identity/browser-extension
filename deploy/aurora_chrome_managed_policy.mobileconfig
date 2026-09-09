@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>PayloadContent</key>
+    <array>
+      <dict>
+        <key>PayloadType</key>
+        <string>com.apple.ManagedClient.preferences</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>PayloadIdentifier</key>
+        <string>com.auroraidentity.aurora.extension.YOUR_EXTENSION_ID</string>
+        <key>PayloadUUID</key>
+        <string>00000000-0000-0000-0000-000000000001</string>
+        <key>PayloadEnabled</key>
+        <true/>
+        <key>PayloadContent</key>
+        <dict>
+          <key>com.google.Chrome.extensions.YOUR_EXTENSION_ID</key>
+          <dict>
+            <key>Forced</key>
+            <array>
+              <dict>
+                <key>mcx_preference_settings</key>
+                <dict>
+                  <key>aurora_tenant_id</key>
+                  <string>REPLACE_WITH_YOUR_TENANT_ID</string>
+                  <key>aurora_tenant_secret</key>
+                  <string>REPLACE_WITH_YOUR_64_CHARACTER_HEX_SECRET</string>
+                  <key>aurora_collection_enabled</key>
+                  <true/>
+                </dict>
+              </dict>
+            </array>
+          </dict>
+        </dict>
+      </dict>
+    </array>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+    <key>PayloadIdentifier</key>
+    <string>com.auroraidentity.aurora.extension.YOUR_EXTENSION_ID</string>
+    <key>PayloadUUID</key>
+    <string>00000000-0000-0000-0000-000000000002</string>
+    <key>PayloadDisplayName</key>
+    <string>Aurora Identity Chrome Managed Policy</string>
+    <key>PayloadDescription</key>
+    <string>Managed policy delivering the Aurora Identity extension configuration</string>
+    <key>PayloadOrganization</key>
+    <string>Aurora Identity</string>
+  </dict>
+</plist>

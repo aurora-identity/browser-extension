@@ -1,0 +1,17 @@
+# ---- Rust / Cargo ----
+target/
+debug/
+release/
+.rustup/
+.rustc/
+
+.DS_Store
+
+*.log
+
+*~
+*.swp
+
+.env
+
+extension-dist

@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "properties": {
+    "aurora_tenant_id": {
+      "type": "string",
+      "description": "Public tenant identifier. Sent with every event so the server knows which customer it belongs to."
+    },
+    "aurora_tenant_secret": {
+      "type": "string",
+      "description": "Hex-encoded 256-bit secret. Never sent. Signing and pseudonym keys are derived from it."
+    },
+    "aurora_collection_enabled": {
+      "type": "boolean"
+    }
+  }
+}
