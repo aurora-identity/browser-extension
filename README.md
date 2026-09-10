@@ -191,7 +191,7 @@ A few things a newcomer should know:
 `SERVER` in `background.js` points at `http://localhost:8080/ingest`, with the production
 URL commented out on the line above. This repository is the client half only. The server
 that receives these payloads lives at
-[aurora-identity/server-public](https://github.com/aurora-identity/server-public). Point
+[aurora-identity/risk-engine](https://github.com/aurora-identity/risk-engine). Point
 that constant at whatever you are running before you expect anything to arrive.
 
 `aurora_tenant_secret` is the secret everything else is built on. It signs payloads and it
@@ -231,7 +231,7 @@ them yourself, get in touch.
 ## Getting in touch
 
 Questions, bugs and patches are welcome as
-[issues](https://github.com/aurora-identity/browser-extension-public/issues) on this
+[issues](https://github.com/aurora-identity/browser-extension/issues) on this
 repository.
 
 If you would like detectors built for your own data types, help deploying this across a
