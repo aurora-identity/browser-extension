@@ -9,6 +9,11 @@ of it does.
 It is built for a workplace deployment. An IT administrator pushes the configuration
 through MDM policy, and the extension does nothing at all until that policy arrives.
 
+The rest of Aurora Identity lives in two other repositories.
+[risk-engine](https://github.com/aurora-identity/risk-engine) is the server that receives
+what this extension reports, and [website](https://github.com/aurora-identity/website) is
+the source for auroraidentity.com.
+
 ## What it actually does
 
 When Chrome is about to send a request, the extension gets a look at it before it goes
@@ -94,7 +99,7 @@ Makefile                    Builds the Rust module and minifies the extension
 
 ## Building it
 
-You need a Rust toolchain, [`wasm-pack`](https://rustwasm.github.io/wasm-pack/), and
+You need a Rust toolchain, [`wasm-pack`](https://rustwasm.github.io/docs/wasm-pack/), and
 Node.js, which the build uses to run `terser` through `npx`.
 
 ```bash
